@@ -17,7 +17,7 @@ We build agentic systems and Kubernetes-native tooling so teams can operate, sec
 
 ## Projects
 
-Open-source repositories in this organization. Descriptions are taken from the repositories themselves.
+Open-source work in this organization. Flock logos and one-line copy for ShrikeOps, Heron Ops, and Starling EX Community follow [warbleoss.org](https://warbleoss.org) and the logo table in [warble-army `brand/README.md`](https://github.com/warbletech/warble-army/blob/main/brand/README.md). Other rows use each repository's description. All marks are shown at 48px.
 
 <table>
   <thead>
@@ -29,49 +29,59 @@ Open-source repositories in this organization. Descriptions are taken from the r
   </thead>
   <tbody>
   <tr>
-    <td align="center"><img src="assets/logo-starling.svg" width="56" alt="Starling"></td>
+    <td align="center"><img src="assets/shrike-ops-logo.jpg" width="48" alt="ShrikeOps"></td>
+    <td><a href="https://warbleoss.org/#flock"><strong>ShrikeOps</strong></a><br><a href="https://github.com/warbletech/shrikeops">warbletech/shrikeops</a> · <a href="https://github.com/warbletech/shrikeops-demo">shrikeops-demo</a></td>
+    <td>Hunts misconfigurations, CVEs, and deprecated APIs. Impales findings on a scored report before they hit production.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/heron-ops-logo.jpg" width="48" alt="Heron Ops"></td>
+    <td><a href="https://warbleoss.org/#flock"><strong>Heron Ops</strong></a><br><a href="https://github.com/warbletech/heron-ops">warbletech/heron-ops</a></td>
+    <td>Kubernetes MCP server for live pods, logs, events, and metrics. Formerly SteadyHelm. Calm observation, precise tools for any agent IDE.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/logo-starling.svg" width="48" alt="Starling EX Community"></td>
+    <td><a href="https://warbleoss.org/"><strong>Starling EX Community</strong></a><br><a href="https://github.com/warbletech/warble-army/tree/main/charts/starling-ex-ce">charts/starling-ex-ce</a></td>
+    <td>Self-host package: Starling Lite facade + Heron Ops + ShrikeOps, one Helm chart. Planned CNCF donation under Warble stewardship today.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/logo-starling.svg" width="48" alt="Starling"></td>
     <td><a href="https://github.com/warbletech/starling"><strong>Starling</strong></a><br><a href="https://github.com/warbletech/starling-community">starling-community</a></td>
     <td>MCP server for Kubernetes ops. Scan manifests, read live clusters, remediate. Community plugin is a read-only MCP surface for Grok and Antigravity.</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/logo-shrikeops.svg" width="56" alt="ShrikeOps"></td>
-    <td><a href="https://github.com/warbletech/shrikeops"><strong>ShrikeOps</strong></a><br><a href="https://github.com/warbletech/shrikeops-demo">shrikeops-demo</a></td>
-    <td>Kubernetes Helm safety gate — Pluto + Polaris + kube-score + OPA + OSV vulndb. Demo scans manifests, charts, and live GKE/EKS clusters.</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/logo-heronops.svg" width="56" alt="Heron Ops"></td>
-    <td><a href="https://github.com/warbletech/heron-ops"><strong>Heron Ops</strong></a></td>
-    <td>Kubernetes MCP server for AI agents (live cluster state). Part of Warble Army / warbleoss.org.</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/logo-starling.svg" width="56" alt="Warble Army"></td>
+    <td align="center"><img src="assets/warble-icon.png" width="48" alt="Warble Army"></td>
     <td><a href="https://github.com/warbletech/warble-army"><strong>Warble Army</strong></a></td>
-    <td>Kubernetes agents + MCP umbrella (ShrikeOps, SteadyHelm, Starling Lite).</td>
+    <td>Kubernetes agents + MCP umbrella (ShrikeOps, Heron Ops, Starling Lite).</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="56" alt="Warble Linux"></td>
+    <td align="center"><img src="assets/warble-linux-logo.jpg" width="48" alt="Warble Linux"></td>
     <td><a href="https://github.com/warbletech/warble-linux"><strong>warble-linux</strong></a></td>
     <td>Sandbox-oriented Linux live images for isolated testing, learning, and cloud-native workflows. Four editions · ISO · WSL · OVF · Vagrant. GPL-2.0.</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="56" alt="warbleoss.org"></td>
-    <td><a href="https://github.com/warbletech/warbleoss.org"><strong>warbleoss.org</strong></a></td>
-    <td>Open-source home for Warble Army (ShrikeOps, Heron Ops, Starling EX CE).</td>
+    <td align="center"><img src="assets/warble-icon.png" width="48" alt="warbleoss.org"></td>
+    <td><a href="https://warbleoss.org/"><strong>warbleoss.org</strong></a><br><a href="https://github.com/warbletech/warbleoss.org">warbletech/warbleoss.org</a></td>
+    <td>Open-source home for Warble Army (ShrikeOps, Heron Ops, Starling EX Community).</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="56" alt="k8s AI Conformance"></td>
+    <td align="center"><img src="assets/warble-icon.png" width="48" alt="Community"></td>
+    <td><a href="https://warbleoss.org/#community"><strong>community</strong></a><br><a href="https://github.com/warbletech/community">warbletech/community</a></td>
+    <td>Warble Cloud community — Office Hours, working groups, RFCs, governance.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/warble-icon.png" width="48" alt="warble-bootstrap"></td>
+    <td><a href="https://warbleoss.org/#start"><strong>warble-bootstrap</strong></a><br><a href="https://github.com/warbletech/warble-bootstrap">warbletech/warble-bootstrap</a></td>
+    <td>Org clone script and the map of where Warble deploys. Listed on warbleoss.org as a local-stack starting point.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/warble-icon.png" width="48" alt="k8s AI Conformance"></td>
     <td><a href="https://github.com/warbletech/k8s-ai-conformance"><strong>k8s-ai-conformance</strong></a></td>
     <td>Kubernetes AI Conformance.</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="56" alt="Community"></td>
-    <td><a href="https://github.com/warbletech/community"><strong>community</strong></a></td>
-    <td>Warble Cloud community — Office Hours, working groups, RFCs, governance.</td>
   </tr>
   </tbody>
 </table>
 
-Related public utilities: [warble-bootstrap](https://github.com/warbletech/warble-bootstrap) (org clone script and deployment map), [ui-intern-assignment](https://github.com/warbletech/ui-intern-assignment) (UI intern take-home).
+Related public utility: [ui-intern-assignment](https://github.com/warbletech/ui-intern-assignment) (UI intern take-home).
 
 ## Platform
 

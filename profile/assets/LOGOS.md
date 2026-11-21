@@ -1,31 +1,25 @@
-# Logos sourced from warblecloud.com/fitment
+# Logos used on the GitHub org profile
 
-Fetched 2026-11-20 (Asia/Calcutta). The fitment page itself served HTTP 200.
-Product marks on that page are **inline SVGs** in the product cards, not standalone image URLs.
-They were extracted from the rendered HTML. Raster brand assets were downloaded from the URLs the fitment page (and its JSON-LD / link tags) referenced.
+## Official flock marks (warbleoss.org + warble-army brand README)
 
-Paths not found (HTTP 404): `/army/hummingbird.jpg` and other `/army/*.jpg` guesses. `/brand` and `/logos` URL paths 307-redirect to the homepage; they are not asset directories.
+These two files are byte-identical on https://warbleoss.org/assets/ and in
+https://github.com/warbletech/warble-army/tree/main/brand (see `brand/README.md`).
 
-## Product marks (inline SVG, extracted)
+| File | Product | Source |
+|------|---------|--------|
+| `shrike-ops-logo.jpg` | ShrikeOps | warbleoss.org/assets/shrike-ops-logo.jpg · brand/shrike-ops/shrike-ops-logo.jpg |
+| `heron-ops-logo.jpg` | Heron Ops | warbleoss.org/assets/heron-ops-logo.jpg · brand/heron-ops/heron-ops-logo.jpg |
 
-- `logo-shrikeops.svg` — **ShrikeOps** (1461 bytes)
-- `logo-heronops.svg` — **HeronOps** (1445 bytes)
-- `logo-starling.svg` — **Starling** (1856 bytes)
-- `logo-frakmax.svg` — **FrakmaX** (1778 bytes)
-- `logo-hummingbird.svg` — **Hummingbird** (741 bytes)
-- `logo-finops.svg` — **FinOps** (658 bytes)
-- `logo-sovereign-agent.svg` — **Sovereign Agent** (631 bytes)
-- `logo-reflexion.svg` — **Reflexion** (795 bytes)
-- `logo-warble-brain.svg` — **Warble-brain** (2068 bytes)
+warbleoss.org has no unique Starling EX Community mark (the landing page reuses the Heron Ops logo at reduced opacity). The Projects table keeps the fitment SVG `logo-starling.svg` for Starling / Starling EX Community. A 1024² `starling_logo.jpg` exists in `warbletech/shrikeops`, but it has a checkerboard baked into the JPEG (documented in warble-linux `assets/brand/README.md`) and is not used here.
 
-## Site brand rasters
+## Other project marks
 
-- `warble-logo.png` — Wordmark/logo from https://warblecloud.com/warble-logo.png (linked from the marketing site; not an inline fitment asset, but the primary brand logo used in the header of pages including fitment) (68990 bytes)
-- `warble-icon.png` — Icon preloaded on the fitment page (https://warblecloud.com/warble-icon.png) (36462 bytes)
-- `logo-192.png` — 192px icon referenced as a favicon/logo on the fitment page (https://warblecloud.com/logo-192.png) (40242 bytes)
-- `logo-512.png` — 512px logo from JSON-LD on the fitment page (https://warblecloud.com/logo-512.png) (216452 bytes)
-- `og-image.jpg` — Open Graph image from the fitment page meta tags (https://warblecloud.com/og-image.jpg) (31067 bytes)
-- `apple-touch-icon.png` — Apple touch icon from the fitment page (36540 bytes)
-- `favicon-32.png` — 32px favicon from the fitment page (2586 bytes)
-- `favicon-16.png` — 16px favicon from the fitment page (1121 bytes)
-- `favicon.ico` — Favicon from https://warblecloud.com/favicon.ico (4102 bytes)
+| File | Product | Source |
+|------|---------|--------|
+| `warble-linux-logo.jpg` | warble-linux | `logo.jpg` at the root of https://github.com/warbletech/warble-linux |
+| `logo-starling.svg` | Starling / Starling EX Community | Fitment inline SVG (warbleoss.org has none) |
+| `warble-icon.png` | Warble Army, warbleoss.org, community, warble-bootstrap, k8s-ai-conformance | Site icon from warblecloud.com (no unique official mark on warbleoss.org) |
+
+## Fitment product marks (Platform section)
+
+Extracted from https://warblecloud.com/fitment (inline SVGs) plus site-wide rasters the page references: `logo-*.svg`, `warble-logo.png`, `warble-icon.png`, `logo-192.png`, `logo-512.png`, `og-image.jpg`, favicons.
