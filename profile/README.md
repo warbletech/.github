@@ -24,7 +24,15 @@
   &nbsp;&nbsp;
   <a href="https://github.com/warbletech/warble-linux"><img src="assets/warble-linux-logo.jpg" alt="warble-linux" height="40"></a>
   &nbsp;&nbsp;
-  <a href="https://warbleoss.org"><img src="assets/warble-icon.png" alt="warble-flock and warbleoss.org" height="40"></a>
+  <a href="https://warbleoss.org"><img src="assets/logo-warbleoss.png" alt="WarbleOSS" height="40"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/warbletech/community"><img src="assets/logo-warble-community.png" alt="Warble Community" height="40"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/warbletech/warble-bootstrap"><img src="assets/warble-icon.png" alt="warble-bootstrap" height="40"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/cncf/k8s-ai-conformance"><img src="assets/logo-k8s-ai-conformance.png" alt="Kubernetes AI Conformance" height="40"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/warbletech/warble-army"><img src="assets/warble-icon.png" alt="warble-flock" height="40"></a>
 </p>
 
 <p align="center">
@@ -85,24 +93,24 @@ The public umbrella repository is still named [`warbletech/warble-army`](https:/
     <td>Sandbox-oriented Linux live images for isolated testing, learning, and cloud-native workflows. Four editions · ISO · WSL · OVF · Vagrant. GPL-2.0.</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="48" alt="warbleoss.org"></td>
+    <td align="center"><img src="assets/logo-warbleoss.png" width="48" alt="WarbleOSS"></td>
     <td><a href="https://warbleoss.org/"><strong>warbleoss.org</strong></a><br><a href="https://github.com/warbletech/warbleoss.org">warbletech/warbleoss.org</a></td>
-    <td>Open-source home for warble-flock (ShrikeOps, Heron Ops, and the community self-host chart).</td>
+    <td>Open-source home for warble-flock (ShrikeOps, Heron Ops, Starling-EX Community).</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="48" alt="Community"></td>
+    <td align="center"><img src="assets/logo-warble-community.png" width="48" alt="Warble Community"></td>
     <td><a href="https://warbleoss.org/#community"><strong>community</strong></a><br><a href="https://github.com/warbletech/community">warbletech/community</a></td>
     <td>Warble Cloud community — Office Hours, working groups, RFCs, governance.</td>
   </tr>
   <tr>
     <td align="center"><img src="assets/warble-icon.png" width="48" alt="warble-bootstrap"></td>
-    <td><a href="https://warbleoss.org/#start"><strong>warble-bootstrap</strong></a><br><a href="https://github.com/warbletech/warble-bootstrap">warbletech/warble-bootstrap</a></td>
-    <td>Org clone script and the map of where Warble deploys. Listed on warbleoss.org as a local-stack starting point.</td>
+    <td><a href="https://github.com/warbletech/warble-bootstrap"><strong>warble-bootstrap</strong></a><br><a href="https://warbleoss.org/#start">warbleoss.org/#start</a></td>
+    <td>Org clone script and the map of where Warble deploys. No unique official mark has been published yet, so the Warble icon stands in.</td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/warble-icon.png" width="48" alt="k8s AI Conformance"></td>
-    <td><a href="https://github.com/warbletech/k8s-ai-conformance"><strong>k8s-ai-conformance</strong></a></td>
-    <td>Kubernetes AI Conformance.</td>
+    <td align="center"><img src="assets/logo-k8s-ai-conformance.png" width="48" alt="Kubernetes AI Conformance"></td>
+    <td><a href="https://github.com/cncf/k8s-ai-conformance"><strong>k8s-ai-conformance</strong></a><br><a href="https://github.com/warbletech/k8s-ai-conformance">warbletech fork</a></td>
+    <td>CNCF Kubernetes AI Conformance. Warble&apos;s <a href="https://github.com/cncf/k8s-ai-conformance/pull/131">PR #131</a> (HTTP 429 retry for evidence URL validation) merged on 29 October 2026.</td>
   </tr>
   </tbody>
 </table>

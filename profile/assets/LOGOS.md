@@ -18,7 +18,7 @@ warbleoss.org has no unique community self-host chart mark (the landing page reu
 |------|---------|--------|
 | `warble-linux-logo.jpg` | warble-linux | `logo.jpg` at the root of https://github.com/warbletech/warble-linux |
 | `logo-starling.svg` | Historical Starling fitment mark, kept in this folder, not used as a hero or as a Ruffle MCP stand-in | Fitment inline SVG (warbleoss.org has none) |
-| `warble-icon.png` | warble-flock, Ruffle MCP (stand-in), warbleoss.org, community, warble-bootstrap, k8s-ai-conformance | Site icon from warblecloud.com (no unique official Ruffle MCP or warble-flock mark was found in warbletech repos) |
+| `warble-icon.png` | warble-flock, Ruffle MCP (stand-in), and warble-bootstrap (no unique official mark yet) | Site icon from warblecloud.com (no unique official Ruffle MCP, warble-flock, or warble-bootstrap mark was found in warbletech repos) |
 
 ## Fitment product marks (Platform section)
 
@@ -45,3 +45,18 @@ These files are copied from `apps/frontend/public/logos/` in [warbletech/warble-
 | `aaif-mark.svg` | Agentic AI Foundation (symbol) | warble-core `apps/frontend/public/logos/aaif-mark.svg` |
 
 Official brand pages: [Linux Foundation Brand Guidelines](https://www.linuxfoundation.org/brand-guidelines), [AAIF Brand Guidelines](https://aaif.io/brand).
+
+## Marks added from supplied artwork (21 November 2026)
+
+Avinash supplied full-size PNG masters. They were cropped to the artwork (near-white
+margins removed, background made transparent), resized to 512×512 and 256×256, and
+compressed with pngquant + optipng. Masters larger than 1MB were not committed.
+
+| File | Product | Link | Source |
+|------|---------|------|--------|
+| `logo-warbleoss.png` (512) · `logo-warbleoss-256.png` | WarbleOSS / warbleoss.org | https://warbleoss.org | Supplied `warbleoss.png` (teal/navy bird wing, 2048², ~1.8MB; not committed) |
+| `logo-warble-community.png` (512) · `logo-warble-community-256.png` | Warble Community | https://github.com/warbletech/community | Supplied `warble-community.png` (coral + teal birds/nodes, 1024²) |
+| `logo-k8s-ai-conformance.png` (512) · `logo-k8s-ai-conformance-256.png` | Kubernetes AI Conformance | https://github.com/cncf/k8s-ai-conformance | Supplied `k8s-ai-conformance.png` (blue hex shield + checkmark, 2048², ~4MB; not committed) |
+
+`warbletech/k8s-ai-conformance` is a fork of `cncf/k8s-ai-conformance`. Warble's
+[PR #131](https://github.com/cncf/k8s-ai-conformance/pull/131) merged on 29 October 2026.

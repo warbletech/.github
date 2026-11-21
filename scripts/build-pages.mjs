@@ -204,7 +204,11 @@ const indexBody = `
       ${logo("https://warbleoss.org/#flock", "shrike-ops-logo.jpg", "ShrikeOps")}
       ${logo("https://warbleoss.org/#flock", "heron-ops-logo.jpg", "Heron Ops")}
       ${logo("https://github.com/warbletech/warble-linux", "warble-linux-logo.jpg", "warble-linux")}
-      ${logo("https://warbleoss.org", "warble-icon.png", "warble-flock")}
+      ${logo("https://warbleoss.org", "logo-warbleoss.png", "WarbleOSS")}
+      ${logo("https://github.com/warbletech/community", "logo-warble-community.png", "Warble Community")}
+      ${logo("https://github.com/warbletech/warble-bootstrap", "warble-icon.png", "warble-bootstrap")}
+      ${logo("https://github.com/cncf/k8s-ai-conformance", "logo-k8s-ai-conformance.png", "Kubernetes AI Conformance")}
+      ${logo("https://github.com/warbletech/warble-army", "warble-icon.png", "warble-flock")}
     </div>
 
     <section class="soon">
