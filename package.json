@@ -1,0 +1,13 @@
+{
+  "name": "warbletech-github-profile",
+  "private": true,
+  "description": "Org profile assets and a synthetic GitHub Pages demo adapted from the gh-cao Documentation Pages pattern.",
+  "type": "module",
+  "scripts": {
+    "pages:build": "node scripts/build-pages.mjs",
+    "pages:preview": "node scripts/build-pages.mjs && python3 -m http.server 8080 --directory dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

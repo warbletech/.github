@@ -1,0 +1,92 @@
+# Documentation Pages + synthetic demo.
+#
+# Adapted from the Central Agentic Ops (gh-cao) Documentation Pages workflow:
+# https://githubnext.github.io/gh-cao/deployment-actions/#building-the-synthetic-pages-demo
+# https://github.com/githubnext/gh-cao/blob/main/.github/workflows/docs.yml
+#
+# This repo does not vendor the gh-cao dashboard, Go server, Web Worker, or
+# IndexedDB pipeline. It keeps the operational boundary: Pages publishes
+# documentation and a clearly labeled synthetic demo only. It never collects
+# or downloads operational evidence, and agents receive no deployment authority.
+#
+# Do not enable GitHub Pages or add secrets in this pull request. A maintainer
+# must set Settings → Pages → Source to GitHub Actions before the deploy job
+# can publish. No extra secrets are required; deploy uses OIDC.
+
+name: Documentation Pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Refresh synthetic dates; never wait for operational collection.
+    - cron: "23 5 * * *"
+  pull_request:
+    paths:
+      - .github/workflows/docs.yml
+      - package.json
+      - pages/**
+      - profile/**
+      - scripts/**
+      - README.md
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/docs.yml
+      - package.json
+      - pages/**
+      - profile/**
+      - scripts/**
+      - README.md
+
+permissions:
+  contents: read
+
+concurrency:
+  group: documentation-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+      - name: Build documentation and synthetic demo
+        env:
+          BASE_PATH: /.github/
+          PUBLIC_PAGES_BUILD_COMMIT: ${{ github.sha }}
+        run: npm run pages:build
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
